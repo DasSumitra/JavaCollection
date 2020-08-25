@@ -1,20 +1,21 @@
-package com.array.test;
+package com.list.employee.name;
 
 public class Employee {
-	private int empid;
+	private int empId;
 	private String name;
 	private String address;
 	
-	public Employee(int empid, String name, String address) {
-		this.empid = empid;
+	public Employee(int empId, String name, String address) {
+		System.out.println("Employee constructor()");
+		this.empId = empId;
 		this.name = name;
 		this.address = address;
 	}
-	public int getEmpid() {
-		return empid;
+	public int getEmpId() {
+		return empId;
 	}
-	public void setEmpid(int empid) {
-		this.empid = empid;
+	public void setEmpId(int empId) {
+		this.empId = empId;
 	}
 	public String getName() {
 		return name;
@@ -30,8 +31,9 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [empid=" + empid + ", name=" + name + ", address=" + address + "]";
+		return "Employee [empId=" + empId + ", name=" + name + ", address=" + address + "]";
 	}
 	
+
 
 }
