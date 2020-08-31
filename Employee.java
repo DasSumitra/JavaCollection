@@ -1,36 +1,44 @@
-package com.array.test;
+package com.compare.demo;
 
-public class Employee {
-	private int empid;
+public class Employee{
+	private int eId;
 	private String name;
 	private String address;
 	
-	public Employee(int empid, String name, String address) {
-		this.empid = empid;
+	public Employee(int eId, String name, String address) {
+		this.eId = eId;
 		this.name = name;
 		this.address = address;
 	}
-	public int getEmpid() {
-		return empid;
+
+
+	public int geteId() {
+		return eId;
 	}
-	public void setEmpid(int empid) {
-		this.empid = empid;
+
+	public void seteId(int eId) {
+		this.eId = eId;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	@Override
 	public String toString() {
-		return "Employee [empid=" + empid + ", name=" + name + ", address=" + address + "]";
+		return "Employee [eId=" + eId + ", name=" + name + ", address=" + address + "]";
 	}
 	
 
