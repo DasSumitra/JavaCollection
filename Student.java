@@ -1,48 +1,35 @@
-package com.map.demo;
+package com.comparator.test;
+
+import java.util.Comparator;
 
 public class Student {
-	private int sid;
-	private String name;
+	private int sId;
+	private String sname;
 	private String address;
 
-	public int getSid() {
-		return sid;
+	public Student(int sId, String sname, String address) {
+		this.sId = sId;
+		this.sname = sname;
+		this.address = address;
 	}
 
-	public void setSid(int sid) {
-		this.sid = sid;
+	public int getsId() {
+		return sId;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public String getSname() {
+		return sname;
 	}
 
 	public String getAddress() {
 		return address;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
 	@Override
 	public String toString() {
-		return "Student [sid=" + sid + ", name=" + name + ", address=" + address + "]";
-	}
-
-	public Student(int sid, String name, String address) {
-		this.sid = sid;
-		this.name = name;
-		this.address = address;
-	}
-
-	public Student() {
+		return "Student [sId=" + sId + ", sname=" + sname + ", address=" + address + "]";
 	}
 	
-	
+
 
 }
