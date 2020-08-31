@@ -1,9 +1,16 @@
-package com.nt.compare;
+package com.compare.test;
 
-public class Employee implements Comparable<Employee>{
+public class Employee{
 	private int eId;
 	private String name;
 	private String address;
+	
+	public Employee(int eId, String name, String address) {
+		this.eId = eId;
+		this.name = name;
+		this.address = address;
+	}
+
 
 	public int geteId() {
 		return eId;
@@ -33,13 +40,6 @@ public class Employee implements Comparable<Employee>{
 	public String toString() {
 		return "Employee [eId=" + eId + ", name=" + name + ", address=" + address + "]";
 	}
-
 	
-
-	@Override
-	public int compareTo(Employee e) {
-		// TODO Auto-generated method stub
-		return this.eId-e.eId;
-	}
 
 }
