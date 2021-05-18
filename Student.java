@@ -1,35 +1,43 @@
-package com.comparator.test;
-
-import java.util.Comparator;
+package com.nt.list.test;
 
 public class Student {
-	private int sId;
-	private String sname;
+	private int sid;
+	private String name;
 	private String address;
 
-	public Student(int sId, String sname, String address) {
-		this.sId = sId;
-		this.sname = sname;
+	public Student(int sid, String name, String address) {
+		this.sid = sid;
+		this.name = name;
 		this.address = address;
 	}
 
-	public int getsId() {
-		return sId;
+	public int getSid() {
+		return sid;
 	}
 
-	public String getSname() {
-		return sname;
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getAddress() {
 		return address;
 	}
 
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [sId=" + sId + ", sname=" + sname + ", address=" + address + "]";
+		return "Student [sid=" + sid + ", name=" + name + ", address=" + address + "]";
 	}
-	
-
 
 }
