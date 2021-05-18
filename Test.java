@@ -1,6 +1,12 @@
-package com.nt.lambda;
+package com.test.exception;
 
-public interface Test {
-	public void show();
+public class Test {
+
+	public static void main(String[] args) {
+		StudentRegistration studentRegistration = new StudentRegistration();
+		Student student=new Student("Sumitra", "Bangalore");
+		System.out.println(studentRegistration.registerStudent(student));
+		System.out.println(studentRegistration.registerStudent(null));
+	}
 
 }
